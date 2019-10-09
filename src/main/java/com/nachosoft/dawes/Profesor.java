@@ -70,7 +70,7 @@ public class Profesor {
 	
 	@Override
 	public String toString () {
-		return "Profesor: [Nombre: " + this.nombre + " dni: " + this.dni + " Fecha acecso carrera: " + this.fechaFuncionariado + "]";		
+		return "Profesor: [Nombre: " + this.nombre + ", dni: " + this.dni + ", Fecha acecso carrera: " + this.fechaFuncionariado + "]";		
 	}
 
 	@Override
