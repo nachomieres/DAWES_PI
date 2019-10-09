@@ -1,22 +1,24 @@
 package com.nachosoft.dawes;
 
+import java.util.ArrayList;
+
 public class CicloFormativo {
 
 	private String denCorta;
 	private String denLarga;
+	private ArrayList<Profesor> profesores;
 	
-	public CicloFormativo(String denCorta, String denLarga) {
+	public CicloFormativo(String denCorta, String denLarga, ArrayList<Profesor> p) {
 		super();
 		this.setDenCorta(denCorta);
 		this.setDenLarga(denLarga);
+		this.profesores = p;
 	}
 	
 	public CicloFormativo() {
 		super();
-		// TODO Auto-generated constructor stub
+		this.profesores = new ArrayList<Profesor> (); 
 	}
-
-
 
 	public String getDenCorta() {
 		return denCorta;
@@ -34,6 +36,14 @@ public class CicloFormativo {
 		this.denLarga = denLarga;
 	}
 
+	public ArrayList<Profesor> getProfesores() {
+		return profesores;
+	}
+
+	public void setProfesores(ArrayList<Profesor> profesores) {
+		this.profesores = profesores;
+	}
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -69,7 +79,4 @@ public class CicloFormativo {
 	public String toString() {
 		return "Ciclo Formativo [Denominacion corta: " + this.denCorta + " Denominacion Larga " + this.denLarga +"]";
 	}
-	
-	
-	
 }

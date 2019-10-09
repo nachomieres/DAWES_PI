@@ -9,12 +9,12 @@ public class Profesor {
 	private LocalDate fechaFuncionariado;
 	private ArrayList<CicloFormativo> ciclos;
 	
-	public Profesor (String n, String d, LocalDate f) {
+	public Profesor (String n, String d, LocalDate f, ArrayList<CicloFormativo> c) {
 		super ();
 		this.nombre = n;
 		this.dni = d;
 		this.fechaFuncionariado = f;
-		this.ciclos = new ArrayList<CicloFormativo>();
+		this.ciclos = c;
 	}
 	
 	public Profesor() {
@@ -58,6 +58,15 @@ public class Profesor {
 	public void setFechaFuncionariado(LocalDate fechaFuncionariado) {
 		this.fechaFuncionariado = fechaFuncionariado;
 	}
+	
+	public ArrayList<CicloFormativo> getCiclos() {
+		return ciclos;
+	}
+
+	public void setCiclos(ArrayList<CicloFormativo> ciclos) {
+		this.ciclos = ciclos;
+	}
+
 	
 	@Override
 	public String toString () {
@@ -106,6 +115,7 @@ public class Profesor {
 			return false;
 		return true;
 	}
+
 	
 	
 	
