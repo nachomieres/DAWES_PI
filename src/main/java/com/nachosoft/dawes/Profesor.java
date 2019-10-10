@@ -22,45 +22,32 @@ public class Profesor {
 		this.ciclos = new ArrayList<CicloImpartido>();
 	}
 
-	/**
-	 * @return the dni
-	 */
 	public String getDni() {
 		return dni;
 	}
-	/**
-	 * @param dni the dni to set
-	 */
+
 	public void setDni(String dni) {
 		this.dni = dni;
 	}
-	/**
-	 * @return the nombre
-	 */
+
 	public String getNombre() {
 		return nombre;
 	}
-	/**
-	 * @param nombre the nombre to set
-	 */
+
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	/**
-	 * @return the fechaFuncionariado
-	 */
+
 	public LocalDate getFechaFuncionariado() {
 		return fechaFuncionariado;
 	}
-	/**
-	 * @param fechaFuncionariado the fechaFuncionariado to set
-	 */
+
 	public void setFechaFuncionariado(LocalDate fechaFuncionariado) {
 		this.fechaFuncionariado = fechaFuncionariado;
 	}
 	
 	public ArrayList<CicloImpartido> getCiclos() {
-		return ciclos;
+		return this.ciclos;
 	}
 
 	public void setCiclos(ArrayList<CicloImpartido> ciclos) {
