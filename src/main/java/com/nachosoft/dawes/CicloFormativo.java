@@ -6,9 +6,9 @@ public class CicloFormativo {
 
 	private String denCorta;
 	private String denLarga;
-	private ArrayList<Profesor> profesores;
+	private ArrayList<CicloImpartido> profesores;
 	
-	public CicloFormativo(String denCorta, String denLarga, ArrayList<Profesor> p) {
+	public CicloFormativo(String denCorta, String denLarga, ArrayList<CicloImpartido> p) {
 		super();
 		this.setDenCorta(denCorta);
 		this.setDenLarga(denLarga);
@@ -17,7 +17,7 @@ public class CicloFormativo {
 	
 	public CicloFormativo() {
 		super();
-		this.profesores = new ArrayList<Profesor> (); 
+		this.profesores = new ArrayList<CicloImpartido> (); 
 	}
 
 	public String getDenCorta() {
@@ -36,11 +36,11 @@ public class CicloFormativo {
 		this.denLarga = denLarga;
 	}
 
-	public ArrayList<Profesor> getProfesores() {
+	public ArrayList<CicloImpartido> getProfesores() {
 		return profesores;
 	}
 
-	public void setProfesores(ArrayList<Profesor> profesores) {
+	public void setProfesores(ArrayList<CicloImpartido> profesores) {
 		this.profesores = profesores;
 	}
 	

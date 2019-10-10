@@ -7,9 +7,9 @@ public class Profesor {
 	private String dni;
 	private String nombre;
 	private LocalDate fechaFuncionariado;
-	private ArrayList<CicloFormativo> ciclos;
+	private ArrayList<CicloImpartido> ciclos;
 	
-	public Profesor (String n, String d, LocalDate f, ArrayList<CicloFormativo> c) {
+	public Profesor (String n, String d, LocalDate f, ArrayList<CicloImpartido> c) {
 		super ();
 		this.nombre = n;
 		this.dni = d;
@@ -19,7 +19,7 @@ public class Profesor {
 	
 	public Profesor() {
 		super ();
-		this.ciclos = new ArrayList<CicloFormativo>();
+		this.ciclos = new ArrayList<CicloImpartido>();
 	}
 
 	/**
@@ -59,11 +59,11 @@ public class Profesor {
 		this.fechaFuncionariado = fechaFuncionariado;
 	}
 	
-	public ArrayList<CicloFormativo> getCiclos() {
+	public ArrayList<CicloImpartido> getCiclos() {
 		return ciclos;
 	}
 
-	public void setCiclos(ArrayList<CicloFormativo> ciclos) {
+	public void setCiclos(ArrayList<CicloImpartido> ciclos) {
 		this.ciclos = ciclos;
 	}
 

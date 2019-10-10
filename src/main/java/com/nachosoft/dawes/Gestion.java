@@ -1,5 +1,6 @@
 package com.nachosoft.dawes;
 
+import java.time.LocalDate;
 import java.util.Scanner;
 import java.util.TreeMap;
 
@@ -20,6 +21,12 @@ public class Gestion {
 	
 	public void addCicloFormativo (CicloFormativo c) {
 		this.ciclos.put(c.getDenCorta(), c);
+	}
+	
+	public void asignaProfesor (Profesor p, CicloFormativo c, LocalDate fecha) {
+		CicloImpartido cp = new CicloImpartido(p, c, fecha);
+		p.getCiclos().add(cp);
+		c.getProfesores().add(cp);
 	}
 	
 	
